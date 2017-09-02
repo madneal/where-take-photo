@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="container">
+  <text class="title">去哪拍身份证照</text>
+<view class="table col2">
+  <view class="tr">
+    <view class="th colt">名称</view>
+    <view class="th colt">地址</view>
+  </view>
+  <block wx:for="{{tableInfo1}}" wx:key="{{name}}">
+    <view class="tr">
+      <view class="td">{{item.name}}</view>
+      <view class="td">{{item.address}}</view>
+    </view>
+  </block>
+</view>
+ <picker bindchange="bindPickerChange1" value="{{index1}}" range="{{district1}}">
+  <view class="picker">区：{{district1[index1]}}</view>
+</picker>
+</view>
