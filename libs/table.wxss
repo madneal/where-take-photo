@@ -1,7 +1,7 @@
 .table {
   border: 1px solid darkgray;
   font-size: 12px;
-  background: #eee;
+  /* background: #eee; */
   width: 100%;
 }
 .tr {
@@ -19,12 +19,6 @@
 .td,.col2{
   width: 100%;
 }
-.bg-w{
-  background: snow;
-}
-.bg-g{
-  background: #E6F3F9;
-}
 .th {
   width: 25%;
   justify-content: center;
@@ -33,6 +27,7 @@
   display: flex;
   height: 3rem;
   align-items: center;
+  font-weight: bold;
 }
 .th,.colt {
   width: 50%;

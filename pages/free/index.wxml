@@ -1,6 +1,10 @@
 <!--index.wxml-->
 <view class="container">
-<view>{{district1[index1]}}有 <text class="location-num">{{tableInfo1.length}}</text> 个拍照点</view>
+<picker bindchange="bindPickerChange" value="{{index1}}" range="{{district1}}">
+  <view class="picker">区：<text>{{district1[index1]}}</text></view>
+  <view class="display">有 <text class="location-num">{{tableInfo1.length}}</text> 个拍照点</view>
+</picker>
+
 <view class="table col2">
   <view class="tr">
     <view class="th colt">名称</view>
@@ -13,7 +17,4 @@
     </view>
   </block>
 </view>
- <picker bindchange="bindPickerChange1" value="{{index1}}" range="{{district1}}">
-  <view class="picker">区：{{district1[index1]}}</view>
-</picker>
 </view>

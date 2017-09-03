@@ -10,13 +10,22 @@
   margin-top: 4rpx;
   margin-bottom: 4rpx;
 } 
-.picker {
-  border-bottom: 1px solid #000;
-}
 button {
   margin: 4rpx;
 }
 .location-num {
   font-weight: bold;
   color: red;
+}
+.picker {
+  margin-bottom: 5rpx;
+}
+.picker text {
+  border-bottom: 1px solid #000;
+}
+picker .picker,picker .display {
+  float: left;
+}
+.display {
+  padding-left: 3rpx;
 }
