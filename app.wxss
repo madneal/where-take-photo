@@ -6,19 +6,17 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding-top: 60rpx;
-  /* padding: 200rpx 0; */
   box-sizing: border-box;
   margin-top: 4rpx;
   margin-bottom: 4rpx;
 } 
-.title {
-  font-size: 20px;
-  padding-bottom: 20px;
-  font-weight: bold;
-  position: absolute;
-  top: 0;
-}
 .picker {
   border-bottom: 1px solid #000;
+}
+button {
+  margin: 4rpx;
+}
+.location-num {
+  font-weight: bold;
+  color: red;
 }

@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view class="container">
-  <text class="title">去哪拍身份证照</text>
+<view>{{district[index]}}有 <text class="location-num">{{tableInfo.length}}</text>个拍照点</view>
 <view class="table">
   <view class="tr">
     <view class="th">名称</view>
@@ -11,7 +11,7 @@
   <block wx:for="{{tableInfo}}" wx:key="{{name}}">
     <view class="tr">
       <view class="td">{{item.name}}</view>
-      <view class="td">{{item.address}}</view>
+      <view class="td" bindtap="getCloset">{{item.address}}</view>
       <view class="td">{{item.tel}}</view>
       <view class="td">{{item.per}}</view>
     </view>
