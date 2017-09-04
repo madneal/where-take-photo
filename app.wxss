@@ -19,6 +19,7 @@ button {
 }
 .picker {
   margin-bottom: 5rpx;
+  margin-right: 20rpx;
 }
 .picker text {
   border-bottom: 1px solid #000;

@@ -15,8 +15,9 @@
   <block wx:for="{{tableInfo}}" wx:key="{{name}}">
     <view class="tr">
       <view class="td">{{item.name}}</view>
-      <view class="td" bindtap="getCloset">{{item.address}}</view>
-      <view class="td">{{item.tel}}</view>
+      <view class="td link"  data-location="{{item.address}}" bindtap="openmap">{{item.address}}
+      </view>
+      <view class="td link" data-tel="{{item.tel}}" bindtap="makecall">{{item.tel}}</view>
       <view class="td">{{item.per}}</view>
     </view>
   </block>

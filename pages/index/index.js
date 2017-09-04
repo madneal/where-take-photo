@@ -1,7 +1,8 @@
 //index.js
 //获取应用实例
 const data = require('../../libs/data.js');
-var baseUrl = 'http://api.map.baidu.com/routematrix/v2/riding?output=json&';
+var baseUrl = 'https://api.map.baidu.com/geocoder/v2/?address=上海市';
+const ak = '&output=json&ak=qMuA8fTWTM4AwtdP4uGa0ZHqzGOj18LP'
 
 Page({
   data: {
@@ -73,6 +74,27 @@ Page({
         console.log(res.data);
       }
     })
+  },
+  makecall: function(e) {
+    const tel = e.target.dataset.tel + '';
+    console.dir(e);
+    wx.makePhoneCall({
+      phoneNumber: tel,
+    })
+  },
+  openmap: function(e) {
+    const location = e.target.dataset.location;
+    const url = baseUrl + location + ak;
+    wx.request({
+      url: url,
+      success: function(res) {
+        wx.openLocation({
+          latitude: res.data.result.location.lat,
+          longitude: res.data.result.location.lng,
+          name: location
+        })
+      }
+    }) 
   },
   bindPickerChange: function(e) {
     this.setData({

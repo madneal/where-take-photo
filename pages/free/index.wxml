@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view class="container">
-<picker bindchange="bindPickerChange" value="{{index1}}" range="{{district1}}">
+<picker bindchange="bindPickerChange1" value="{{index1}}" range="{{district1}}">
   <view class="picker">区：<text>{{district1[index1]}}</text></view>
   <view class="display">有 <text class="location-num">{{tableInfo1.length}}</text> 个拍照点</view>
 </picker>
@@ -13,7 +13,7 @@
   <block wx:for="{{tableInfo1}}" wx:key="{{name}}">
     <view class="tr">
       <view class="td">{{item.name}}</view>
-      <view class="td">{{item.address}}</view>
+      <view class="td link" data-location="{{item.address}}" bindtap="openmap">{{item.address}}</view>
     </view>
   </block>
 </view>

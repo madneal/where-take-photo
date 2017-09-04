@@ -32,3 +32,6 @@
 .th,.colt {
   width: 50%;
 }
+.link {
+  color: #1296db;
+}
