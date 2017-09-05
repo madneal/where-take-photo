@@ -3,6 +3,7 @@
 <picker bindchange="bindPickerChange" value="{{index}}" range="{{district}}">
   <view class="picker">区：<text>{{district[index]}}</text></view>
   <view class="display">有 <text class="location-num">{{tableInfo.length}}</text> 个拍照点</view>
+  <image src="../../img/must-know.png" catchtap="navigateinfo"></image>
 </picker>
 
 <view class="table">

@@ -2,6 +2,7 @@
   "pages":[
     "pages/index/index",
     "pages/free/index",
+    "pages/info/index",
     "pages/logs/logs"
   ],
   "tabBar": {
@@ -18,5 +19,6 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "去哪拍身份证照",
     "navigationBarTextStyle":"black"
-  }
+  },
+  "debug": false
 }

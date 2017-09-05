@@ -30,3 +30,9 @@ picker .picker,picker .display {
 .display {
   padding-left: 3rpx;
 }
+picker image {
+  margin-left: 50rpx;
+  width: 20px;
+  height: 20px;
+  float: right;
+}

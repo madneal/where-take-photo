@@ -1,0 +1,9 @@
+.info view {
+  padding: 10rpx;
+}
+.info .title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+}
